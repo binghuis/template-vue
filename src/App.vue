@@ -1,20 +1,18 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import { toggleDark, isDark } from '@/composables'
+import { Sunny, Moon } from '@element-plus/icons-vue'
+import { ElButton, ElIcon } from 'element-plus'
 </script>
 
 <template>
-  <header>
-    <button
-      @click="
-        () => {
-          toggleDark()
-        }
-      "
-    >
-      <span>{{ isDark ? 'Dark' : 'Light' }}</span>
-    </button>
-  </header>
+  <ElButton @click="toggleDark()">
+    <ElIcon size="small">
+      <Moon v-if="isDark" />
+      <Sunny v-else />
+    </ElIcon>
+  </ElButton>
+
   <RouterView />
 </template>
 
