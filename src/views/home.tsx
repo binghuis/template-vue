@@ -1,12 +1,14 @@
 import { defineComponent } from 'vue'
 
-import Pie from '@/components/charts/pie'
+import MapCht from '@/components/chts/map-cht'
+import PieCht from '@/components/chts/pie-cht'
 
 export default defineComponent({
   setup() {
     return () => (
       <div>
-        <Pie />
+        <MapCht />
+        <PieCht />
       </div>
     )
   }

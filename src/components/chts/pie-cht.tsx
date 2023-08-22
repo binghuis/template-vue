@@ -1,5 +1,5 @@
 import { theme } from '@/composables'
-import type { ECharts } from 'echarts'
+import { type ECharts } from 'echarts'
 import { PieChart } from 'echarts/charts'
 import { LegendComponent, TitleComponent, TooltipComponent } from 'echarts/components'
 import { use } from 'echarts/core'

@@ -3,13 +3,10 @@ import { Moon, Sunny } from '@element-plus/icons-vue'
 import { ElButton, ElIcon } from 'element-plus'
 import { defineComponent, onMounted } from 'vue'
 import { RouterView } from 'vue-router'
-import http from './service/http'
 
 export default defineComponent({
   setup() {
-    onMounted(() => {
-      http.getDataVGEO()
-    })
+    onMounted(() => {})
     return () => (
       <div>
         <ElButton
