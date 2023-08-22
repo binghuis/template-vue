@@ -2,7 +2,7 @@ import './styles/index.scss'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import 'element-plus/dist/index.css'
-import App from './App.vue'
+import App from './App.tsx'
 import router from './router'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
