@@ -1,7 +1,7 @@
 import { theme } from '@/composables'
 import getData from '@/data/map'
 import http from '@/service/http'
-import { registerMap } from 'echarts'
+import { registerMap, type ECharts } from 'echarts'
 import { EffectScatterChart, ScatterChart } from 'echarts/charts'
 import { GeoComponent, LegendComponent, TitleComponent, TooltipComponent } from 'echarts/components'
 import { use } from 'echarts/core'
@@ -52,13 +52,12 @@ export default defineComponent({
 
     onMounted(() => {
       http.getChinaDataVGEO().then((chinaMap) => {
-        console.log(chinaMap)
-
+        // registerMap('china', chinaMap)
         refresh()
       })
     })
 
-    const map = shallowRef(null)
+    const map = shallowRef<ECharts>()
     return () => (
       <VChart
         ref={map}
