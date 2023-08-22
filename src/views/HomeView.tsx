@@ -106,7 +106,7 @@ export default defineComponent({
         <VChart
           style={{ height: '100vh' }}
           theme={theme.value}
-          ref="pie"
+          ref={pie}
           option={option}
           autoresize
         />
