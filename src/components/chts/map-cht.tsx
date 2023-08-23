@@ -8,6 +8,7 @@ import type { GeoJSONSourceInput } from 'echarts/types/src/coord/geo/geoTypes'
 import { defineComponent, shallowRef } from 'vue'
 import VChart from 'vue-echarts'
 import chinaMap from './china-map.noformat.json'
+
 export default defineComponent({
   setup() {
     use([
